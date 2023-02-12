@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image:
+    linear-gradient(rgba(4,9,30,0.7),rgba(2,4.5,15,0.7)),
+    url(./banner.jpg);
+}
+
+nav {
+    display: flex;
+    padding: 2.2rem 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    transition: 1.5s;
+}
+
+.logo img:hover {
+    transform: rotate(-18deg);
+}
+
+
+.links {
+    flex: 1;
+    text-align: right;
+}
+
+.links ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+}
+
+.links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    display: block;
+    margin: auto;
+    background: rgb(172, 58, 38);
+    border-radius: 15px;
+    transition: .7s .15s;
+}
+
+.links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.text-box h1 {
+    font-size: 3rem;
+    padding-bottom: .5rem;
+    text-shadow: .1rem .1rem .1rem rgba(2,4.5,15,0.7);
+}
+
+.text-box p {
+    font-size: 1rem;
+    padding-bottom: .25rem;
+    text-shadow: .05rem .05rem .1rem rgba(2,4.5,15,0.7);
+}
+
+.text-box a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: .05rem .05rem .1rem rgba(2,4.5,15,0.7);
+}
